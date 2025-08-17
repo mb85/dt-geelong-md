@@ -1,0 +1,11 @@
+{
+    "nav": [
+        { "title": "Home", "url": "/" },
+        { "title": "Organisational Chart", "url": "/org_chart" },
+        { "title": "Work Environment", "url": "/environment" },
+        { "title": "Conduct", "url": "/conduct" },
+        { "title": "Policies and Procedures", "url": "/policies" },
+        { "title": "Contact Us", "url": "/contact" }
+    ],
+    "footer": "Copyright © Digital Technologies Geelong 2025"
+}

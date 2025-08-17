@@ -1,0 +1,12 @@
+{{define "header"}}
+<header class="site-header">
+    <a href="/"><img src="/static/images/dtg_logo.svg" alt="Digital Technologies Geelong" class="logo" /></a>
+    <nav class="site-nav">
+        <ul>
+            {{range .Config.Nav}}
+            <li><a href="{{.URL}}">{{.Title}}</a></li>
+            {{end}}
+        </ul>
+    </nav>
+</header>
+{{end}}

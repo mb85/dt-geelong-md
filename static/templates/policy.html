@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{if .Title}}{{.Title}}{{else}}DTG Policy{{end}}</title>
+        <link href="/static/css/styles.css" rel="stylesheet" />
+        <link href="/static/css/markdown.css" rel="stylesheet" />
+    </head>
+    <body>
+        {{template "header" .}}
+        <main class="content">
+            {{if .Error}}
+            <p class="error">{{.Error}}</p>
+            <p>Please return to the <a href="/policies">policies list</a>.</p>
+            {{else}}
+            <section class="markdown-body">{{.Body}}</section>
+            {{end}}
+            <p><a href="/policies">← Return to policies list</a></p>
+        </main>
+        {{template "footer" .}}
+    </body>
+</html>

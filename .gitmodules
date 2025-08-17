@@ -1,0 +1,6 @@
+[submodule "static/pages/policies"]
+	path = static/pages/policies
+	url = git@github.com:mb85/dt-geelong-policies.git
+[submodule "static/policies"]
+	path = static/policies
+	url = git@github.com:computingstudies/dt-geelong-policies.git
