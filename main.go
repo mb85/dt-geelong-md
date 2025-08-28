@@ -218,7 +218,7 @@ func main() {
 		if !exists {
 			w.WriteHeader(http.StatusNotFound)
 			tmplData.Title = "Policy Not Found"
-			tmplData.Error = "Policy not found or missing id parameter."
+			tmplData.Error = "Policy not found."
 		} else {
 			html, err := renderMarkdown(info.Path)
 			if err != nil {
